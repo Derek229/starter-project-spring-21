@@ -1,24 +1,27 @@
-# README
+# Getting started
+TLDR need to clone with a unique project name and rename database
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. git clone git@github.com:Derek229/starter-project-spring-21.git <new_project_name>
 
-Things you may want to cover:
+2. cd  into <new_project_name>
 
-* Ruby version
+3. run bundle 
 
-* System dependencies
+4. rename database to something unique may use <new_project_name> in `database.yml` - search fro `starter-spring-21` in `database.yml` 
 
-* Configuration
+5. rails db:create
+6. cd client
+7. yarn
 
-* Database creation
+## to test 
+1. rails s -p 3001
+2. yarn start
 
-* Database initialization
+## Handle GITHUB  need a new repo
+ two way to do this 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. remove remote add new one (easiest , preferred)
+    - `git remote rm origin`
+    -create a new github repo
+    - git remote add origin <ssh link to repo>
+2. remove git repo entirely and recreate a new repo
